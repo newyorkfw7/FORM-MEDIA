@@ -8,7 +8,7 @@ const { Readable } = require('stream');
 const fs = require('fs');
 const ExcelJS = require('exceljs'); // Importar la librería exceljs
 const app = express();
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 3000;
 
 const pdfDir = path.join(__dirname, 'pdf');
 if (!fs.existsSync(pdfDir)){
