@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Details</title>
+    <link rel="stylesheet" href="media.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+        body {
+            font-family: Outfit, sans-serif;
+        }
+
+        #ticket {
+            width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-family: Outfit, sans-serif;
+            position: relative;
+            height: auto; 
+        }
+
+        #mediaDetails .data-container {
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        #mediaDetails .data-container p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        #mediaDetails .participation-number {
+            font-size: 16px;
+            margin-bottom: 50px;
+        }
+
+        .columna{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logor7{
+            width: 50%;
+            height: 50px;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .logor7 h1{
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 50px;
+            margin: 0;
+            background-color: #000;
+            color: #FFF;
+            margin-bottom: 20px !important;
+            
+        }
+
+        .logor7 h2{
+            margin-top: -30px;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 50px;
+        }
+
+        .logor img{
+            margin-top: 40px;
+            width:100px;
+            height: auto;
+        }
+
+        .mediapass{
+            text-align: center;
+            margin-top: 100px !important;
+        }
+
+        .mediapass h4{
+            text-align: center;
+            margin-top: -75px !important;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 30px;
+            font-weight: 100;
+            letter-spacing: 10px
+            
+        }
+
+        .mediapass h3{
+            text-align: center;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 55px;
+            margin-top: 0 !important;
+        }
+
+        .qr-code-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .qr-img {
+            width: 250px;
+            height: 250px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .register-button {
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 10px 20px;
+            font-family: Outfit, sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .register-button:hover {
+            background-color: #333;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #FFF;
+            border-top: 1px solid #ddd;
+            font-size: 14px;
+            color: #333;
+            position: relative;
+            bottom: 0;
+        }
+
+        .media-details-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .data-container {
+            margin-bottom: 20px;
+        }
+
+        .qr-and-logo-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .qr-code-container {
+            margin-right: auto;
+        }
+
+        #capture {
+            border-radius: 10px;
+            color: #fff;
+            background-color: #000;
+            padding: 10px;
+            position: absolute;
+            top: 100px;
+            left: 350px;
+        }
+
+        .hide-in-capture {
+            display: none !important;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <img src="https://runway7fashion.com/wp-content/uploads/2023/12/RUNWAY-7-updated-logo-1.png" alt="Logo" class="sidebar-logo">
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="http://localhost:3000/register.html" class="menu-item">Register</a></li>
+            <li><a href="http://localhost:3000/media.html" class="menu-item">Participants</a></li>
+            <li><a href="http://localhost:3000/scanner.html" class="menu-item">Scanner QR</a></li>
+            <li><a href="#" class="menu-item exit">Exit</a></li>
+        </ul>
+    </div>
+    <div id="ticket">
+        <div class="mediaDetails" id="mediaDetails">
+            <!-- Información del ticket -->
+             <div class="columna"> 
+                <div class="logor7">
+                    <h1>NEW YORK</h1>
+                    <h2>FASHION WEEK</h2>
+                 </div>
+                 <div class="logor">
+                    <img src="R7FEMAIL.png" alt="">
+                 </div>
+             </div>
+             
+            <div class="mediapass">
+                <h3>MEDIA PASS</h3>
+                <h4>SEPTEMBER</h4>
+            </div>
+            
+            <!-- Aquí se insertarán los detalles del medio -->
+        </div>
+        <div class="footer">
+            EVENT LOCATION: PARAMOUNT HOTEL 235 W 46TH STREET, NEW YORK, NY 10036<br>
+            10 Times Square, Suite 5049<br>
+            New York, NY 10018<br>
+            mailto:events@runway7fashion.com<br>
+            Copyright © 2024 Runway 7 Fashion, All rights reserved.
+        </div>
+    </div>
+    <button id="capture">Capture Ticket</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="mediaDetail.js"></script>
+</body>
+</html>
